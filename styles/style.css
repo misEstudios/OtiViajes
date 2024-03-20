@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap');
+
+:root {
+    --color-principal: rgb(90, 236, 255);
+    --background-h2: rgba(90, 236, 255, 0.479);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+}
+
+header {
+    background-color: rgb(90, 236, 255);
+    background-color: var(--color-principal, rgb(90, 236, 255));
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+
+.logo {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    grid-gap: 10px;
+}
+
+.menu__items a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu__items.active a {
+    text-decoration: underline double;
+}
+
+.imagenPrincipal {
+    background-image: url("../img/montaña.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+}
+
+.imagenPrincipal h2 {
+    color: white;
+    background-color: rgb(90, 236, 255);
+    background-color: var(--background-h2, rgb(90, 236, 255));
+    padding-inline: 15px;
+}
+
+.imagenPrincipal p {
+    color: white;
+    text-align: center;
+}
+
+.tarjetitas {
+    display: flex;
+    padding: 60px;
+    gap: 30px;
+}
+
+.tarjetita {
+    background-color: aqua;
+    background-color: var(--color-principal, aqua);
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tarjetita__imagen {
+    width: 100%;
+}
+
+.texto {
+    padding: 0 20px 20px 20px;
+}
+
+.pie {
+    background-color: aqua;
+    background-color: var(--color-principal, aqua);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-block: 20px;
+}
