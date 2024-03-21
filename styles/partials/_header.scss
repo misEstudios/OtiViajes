@@ -49,3 +49,22 @@ header {
     
 
 }
+
+.item1 a {
+    width: 100px;
+}
+
+.item2 a {
+    width: 200px;
+}
+.item3 a {
+    width: 300px;
+}
+
+@for $i from 1 through 3 {
+
+    .item#{$i} a {
+        width: 100px * $i;
+    }
+
+}
