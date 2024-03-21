@@ -1,0 +1,42 @@
+.imagenPrincipal {
+    background-image: url("../img/montaña.jpg");
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-inline: 200px;
+
+    h2 {
+        color: white;
+        background-color: $backgroundH2;
+        padding-inline: 15px;
+
+        &::first-letter {
+            color: $colorFuerte;
+        }
+
+        &::selection {
+            background: $colorFuerte;
+            color: white;
+        }
+    }
+
+    p {
+        color: white;
+        text-align: center;
+
+        &::first-line {
+            color: $colorFuerte;
+        }
+
+        &::selection {
+            background: $colorFuerte;
+            color: white;
+        }
+    }
+    
+}

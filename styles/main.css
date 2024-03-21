@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+*::-moz-selection {
+  background-color: black;
+  color: rgb(90, 236, 255);
+}
+*::selection {
+  background-color: black;
+  color: rgb(90, 236, 255);
+}
+
+header {
+  background-color: rgb(90, 236, 255);
+  display: flex;
+  gap: 20px;
+  grid-gap: 20px;
+}
+header .logo {
+  width: 100px;
+}
+header .navbar {
+  display: flex;
+  align-items: center;
+}
+header .navbar .menu {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  grid-gap: 10px;
+}
+header .navbar .menu .menu__items a {
+  background-color: white;
+  border: 5px solid white;
+  color: rgb(90, 236, 255);
+  text-decoration: none;
+  padding: 1rem;
+}
+header .navbar .menu .menu__items a:hover {
+  background: rgb(0, 200, 255);
+  color: white;
+}
+header .navbar .menu .menu__items:nth-child(1) {
+  background-color: rgb(20, 236, 255);
+  border-color: rgb(20, 236, 255);
+  color: white;
+}
+header .navbar .menu .menu__items.active a {
+  -webkit-text-decoration: underline double;
+          text-decoration: underline double;
+}
+
+.imagenPrincipal {
+  background-image: url("../img/montaña.jpg");
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 200px;
+}
+.imagenPrincipal h2 {
+  color: white;
+  background-color: rgba(90, 236, 255, 0.479);
+  padding-inline: 15px;
+}
+.imagenPrincipal h2::first-letter {
+  color: rgb(20, 236, 255);
+}
+.imagenPrincipal h2::-moz-selection {
+  background: rgb(20, 236, 255);
+  color: white;
+}
+.imagenPrincipal h2::selection {
+  background: rgb(20, 236, 255);
+  color: white;
+}
+.imagenPrincipal p {
+  color: white;
+  text-align: center;
+}
+.imagenPrincipal p::first-line {
+  color: rgb(20, 236, 255);
+}
+.imagenPrincipal p::-moz-selection {
+  background: rgb(20, 236, 255);
+  color: white;
+}
+.imagenPrincipal p::selection {
+  background: rgb(20, 236, 255);
+  color: white;
+}
+
+.tarjetitas {
+  display: flex;
+  padding: 60px;
+  gap: 30px;
+}
+.tarjetitas .tarjetita {
+  background-color: aqua;
+  background-color: var(--color-principal, aqua);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.tarjetitas .tarjetita .tarjetita__imagen {
+  width: 100%;
+}
+.tarjetitas .tarjetita .texto {
+  padding: 0 20px 20px 20px;
+}
+
+.pie {
+  background-color: rgb(90, 236, 255);
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 20px;
+}/*# sourceMappingURL=main.css.map */

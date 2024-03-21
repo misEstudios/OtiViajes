@@ -1,0 +1,51 @@
+header {
+    background-color: $colorPrincipal;
+    display: flex;
+    gap: 20px;
+    grid-gap: 20px;
+    
+    .logo {
+        width: 100px;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        
+        .menu {
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            grid-gap: 10px;
+
+            .menu__items {
+
+                a {
+                    background-color: white;
+                    border: 5px solid white;
+                    color: $colorPrincipal;
+                    text-decoration: none;
+                    padding: 1rem;
+
+                    &:hover {
+                        background: $colorSuper;
+                        color: white;
+                    }
+                }
+
+                &:nth-child(1) {
+                    background-color: $colorFuerte;
+                    border-color: $colorFuerte;
+                    color: white;
+                }
+                
+                &.active a {
+                    text-decoration: underline double;
+                }
+                
+            }
+        }
+    }
+    
+
+}
